@@ -1,0 +1,11 @@
+<title>demo of globals in browserify</title>
+
+<!-- these are built with npm run build:standalone and npm run build:expose -->
+<script src="./global_build.js"></script>
+<script src="./global_expose.js"></script>
+
+<script>
+  // this just shows the 2 globals are working
+  document.write('<h2>Build:</h2><pre>' + window.global_build + '</pre>')
+  document.write('<h2>Expose:</h2><pre>' + window.globalExpose + '</pre>')
+</script>

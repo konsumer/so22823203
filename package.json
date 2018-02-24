@@ -1,0 +1,12 @@
+{
+  "name": "global_demo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:standalone": "browserify --standalone global_build src/global_build.js > pub/global_build.js",
+    "build:expose": "browserify src/global_expose.js > pub/global_expose.js"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.0"
+  }
+}

@@ -4,9 +4,13 @@
   "version": "1.0.0",
   "scripts": {
     "build:standalone": "browserify --standalone global_build src/global_build.js > pub/global_build.js",
-    "build:expose": "browserify src/global_expose.js > pub/global_expose.js"
+    "build:expose": "browserify src/global_expose.js > pub/global_expose.js",
+    "deploy": "gh-pages -d pub",
+    "predeploy": "npm-run-all build:standalone build:expose"
   },
   "devDependencies": {
-    "browserify": "^16.1.0"
+    "browserify": "^16.1.0",
+    "gh-pages": "^1.1.0",
+    "npm-run-all": "^4.1.2"
   }
 }

@@ -1,3 +1,3 @@
-// this will use browseirfy-options to expose this:
+// this will use browserify-options to expose this:
 
 module.exports = require('./demo_module')
